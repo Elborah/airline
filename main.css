@@ -1,0 +1,270 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body {
+    background-color: #A3C7E4;
+    display: -webkit-flex;
+    justify-content: center;
+    width: 100%;
+}
+.wrapper {
+    background-color: white;
+    max-width: 1000px;
+    margin: 20px;
+    justify-content: center;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    width: 950px;
+    margin: 10px;
+}
+.nav_link{
+    flex: 1;
+    text-align: right;
+}
+.nav_link ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 8px;
+    position: relative;
+}
+.nav_link ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+}
+.nav_link ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #A3C7E4;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav_link ul li:hover::after{
+    width: 100%;
+}
+.image {
+    background-image: url(img/3d-view-sun-sky-from-airplane.jpg);
+    width: 950px;
+    height: 500px;
+    background-position: center;
+    position: relative;
+    background-size: cover;
+    margin: auto;
+    border-radius: 20px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+h2{
+    color: white;
+    font: bold 4em Tahoma;
+    outline: black;
+}
+p{
+    color: white;
+}
+#air{
+    color:#A3C7E4;
+}
+#air:hover{
+    color: #FCD8B0;
+}
+h1{
+    font: bold 1.5em Tahoma;
+}
+.button{
+    padding: 10px;
+    border-radius: 25px;
+    color: #ffffff;
+    background-color: #A3C7E4;
+    border: 1px solid white;
+    cursor: pointer;
+}
+.btn{
+    padding: 10px;
+    border-radius: 25px;
+    color: #ffffff;
+    background-color: #A3C7E4;
+    border: 1px solid white;
+    cursor: pointer;
+    width: 140px;
+    margin-top: 10px;
+}
+.btn:hover{
+    background-color: #FCD8B0;
+    color: black;
+}
+.mik{
+    margin: 40px;
+}
+.part_2{
+    height: 500px;
+    justify-content: center;
+}
+.button:hover{
+    background-color: #FCD8B0;
+    color: black;
+}
+.papa{
+    width: 950px;
+    margin: 20px;
+    border-radius: 25px;
+    height: 450px; 
+    background-color: rgb(243, 236, 236)
+}
+#text{
+    color: white;
+    font: bold 1em Tahoma;
+    padding-top: 10px;
+    letter-spacing: 10px;
+    font-family: monospace;
+    border-right: 5px solid #FCD8B0;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: 
+        typing 4s steps(11),
+        cursor .4s step-end infinite alternate;
+}
+@keyframes cursor{
+    50% { border-color: transparent }
+}
+
+/* typing effect */
+@keyframes typing{
+    from {width: 0; }
+}
+h3{
+    font: bold 1.5em Tahoma;
+}
+.topp{
+    padding: 20px;
+    border-bottom: 2px solid black;
+
+}
+#kini{
+    color: black;
+    margin-top: 5px;
+}
+
+.bud{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+.box_1{
+    width: 250px;
+    height: 250px;
+    border-radius: 25px;
+}
+.box_2{
+    width: 250px;
+    height: 250px;
+}
+.box_3{
+    width: 250px;
+    height: 250px;
+}
+.coco{
+    display: flex;
+    padding: 10px;
+}
+.shey{
+    background-color: blue;
+    color: white;
+    padding: 5px;
+    border-radius: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    cursor: pointer;
+    display: flex;
+}
+.bro{
+    color: black;
+    font: bold 1.5em Tahoma;
+    margin-right: 100px;
+}
+img{
+    border-radius: 25px;
+}
+.box_1:hover{
+    cursor: pointer;
+}
+.box_2:hover{
+    cursor: pointer;
+}
+.box_3:hover{
+    cursor: pointer;
+}
+.bro_3{
+    color: black;
+    font: bold 1.5em Tahoma;
+    margin-right: 130px;
+}
+.bro_2{
+    color: black;
+    font: bold 1.5em Tahoma;
+    margin-right: 85px;
+}
+.part_3{
+    height: 200px;
+    justify-content: center;
+    background-color: black;
+}
+footer {
+    background-color: #b7d3eb; /* Light blue */
+    color: #000;
+    margin-top: 50px;
+    padding-top: 30px;
+    font-family: Arial, sans-serif;
+  }
+
+  .footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+  }
+
+  .footer-section h3,
+  .footer-section h4 {
+    margin-bottom: 10px;
+  }
+
+  .footer-section p, 
+  .footer-section ul, 
+  .footer-section a {
+    font-size: 14px;
+    color: #000;
+    text-decoration: none;
+  }
+
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .footer-section ul li {
+    margin: 5px 0;
+  }
+
+  .footer-section a:hover {
+    text-decoration: underline;
+  }
+
+  .footer-bottom {
+    text-align: center;
+    padding: 15px;
+    border-top: 1px solid #999;
+    font-size: 13px;
+    background: #a2c7e0; /* Slightly darker blue */
+  }
